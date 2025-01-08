@@ -1,0 +1,1 @@
+- We can use armatures - so don't seperate the character into individual chunks like the N64 version. It's less accurate and slightly harder to create, but looks much better and is easier to animate

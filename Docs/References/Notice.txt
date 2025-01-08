@@ -1,0 +1,1 @@
+Images from this folder are taken from miscellaneous places. Please credit your source in the commit message!

@@ -1,0 +1,12 @@
+I'll update this with more later. For now:
+- Use a *lot* of smoothing, just like Earthbound 64
+- Stick with a color palette closer to Mother 3, same with architecture
+- Keep textures at 64x64 or lower
+- No triangle limit as long as it *appears* low-poly and accurate, unless performance is greatly affected
+
+Stick to the layout of Mother 3 GBA maps if unsure.
+- Pork Bean highway tunnel will be replaced with the desert
+- Toilette Falls can *maybe* be shoved into the game. We'll see how it turns out.
+- No clue how Honolele Resort would have appeared, so we should probably cut it
+- Spectacular Cave should be added north of Tazmily, somewhere inside the Sunshine Forest (too iconic to cut)
+- Great Scale Village(west Tazmily) will be re-expanded (Toilette Falls could be here instead of east?)

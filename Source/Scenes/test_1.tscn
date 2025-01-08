@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwbdhj4qxtf81"]
+
+[ext_resource type="ArrayMesh" uid="uid://bau8sl8a0fxda" path="res://Maps/Tazmily/tazmily.obj" id="1_jvuuo"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.933235, -0.328085, -0.1464, -0.153985, -0.733445, 0.662078, -0.324594, -0.595331, -0.734997, 0, 0, 0)
+
+[node name="Tazmily" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_jvuuo")
