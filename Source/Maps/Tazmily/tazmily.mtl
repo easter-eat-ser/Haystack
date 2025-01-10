@@ -1,5 +1,15 @@
-# Blender 4.3.2 MTL File: 'tazmily.blend'
+# Blender 4.2.5 LTS MTL File: 'tazmily.blend'
 # www.blender.org
+
+newmtl Material.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures/tilefloor.png
 
 newmtl Material.008
 Ns 250.000000
@@ -20,16 +30,6 @@ Ni 1.000000
 d 1.000000
 illum 2
 map_Kd textures/taz_yado_window.png
-
-newmtl Material.017
-Ns 0.000000
-Ka 1.000000 1.000000 1.000000
-Ks 0.500000 0.500000 0.500000
-Ke 0.000000 0.000000 0.000000
-Ni 1.500000
-d 1.000000
-illum 2
-map_Kd textures/generic_single_door_warm.png
 
 newmtl blk
 Ns 360.000000
@@ -274,12 +274,12 @@ illum 2
 newmtl taz_town_roof
 Ns 0.000000
 Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd textures/taz_town_yellow_roof.png
 
 newmtl taz_town_sign_thomas
 Ns 250.000000

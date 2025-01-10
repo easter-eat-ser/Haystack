@@ -1,11 +1,21 @@
 extends CharacterBody3D
 
-
-const SPEED = 5.0
-const JUMP_VELOCITY = 4.5
+var model_radians = 0.0
+var SPEED = 4.0
+const JUMP_VELOCITY = 2
 
 
 func _physics_process(delta: float) -> void:
+	
+	if Input.is_action_pressed("3d_run"):
+		SPEED = 25
+	else:
+		SPEED = 4.0
+	
+	var camera = $"/root/Scene/Camera"
+	var model = $"./PlayerModel"
+	
+	rotation.y = camera.rotation.y
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -16,7 +26,15 @@ func _physics_process(delta: float) -> void:
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	var input_dir := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	var input_dir := Input.get_vector("3d_lt", "3d_rt", "3d_ft", "3d_bk")
+	
+
+	if(input_dir.length() > 0.1):
+		model_radians = acos(Vector3(input_dir.x, 0, input_dir.y).dot(Vector3.RIGHT))
+		if(input_dir.y > 0): model_radians = model_radians * -1
+	print(model_radians - 1.5707963267949)
+	model.rotation.y = lerp(model.rotation.y - 1.5707963267949, model_radians - 1.5707963267949, 0.1) + 1.5707963267949
+	
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
 		velocity.x = direction.x * SPEED
