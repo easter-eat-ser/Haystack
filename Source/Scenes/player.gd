@@ -3,7 +3,13 @@ extends CharacterBody3D
 var model_radians = 0.0
 var SPEED = 4.0
 const JUMP_VELOCITY = 2
+var model_init_y_rotation = 0
 
+func _ready() -> void:
+	var model = $"./PlayerModel"
+	model_init_y_rotation = (model.rotation.y)
+	print(model_init_y_rotation)
+	$"./PlayerModel/AnimationPlayer".play(" world_walk")
 
 func _physics_process(delta: float) -> void:
 	
@@ -33,7 +39,7 @@ func _physics_process(delta: float) -> void:
 		model_radians = acos(Vector3(input_dir.x, 0, input_dir.y).dot(Vector3.RIGHT))
 		if(input_dir.y > 0): model_radians = model_radians * -1
 	print(model_radians - 1.5707963267949)
-	model.rotation.y = lerp(model.rotation.y - 1.5707963267949, model_radians - 1.5707963267949, 0.1) + 1.5707963267949
+	model.rotation.y = lerp(model.rotation.y - 1.5707963267949, model_radians - 1.5707963267949, 0.1) + 1.5707963267949 + model_init_y_rotation
 	
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:

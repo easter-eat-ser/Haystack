@@ -50,13 +50,3 @@ Ni 1.000000
 illum 2
 map_Kd eye.png
 map_d eye.png
-
-newmtl generic_shadow
-Ns 0.000000
-Ka 1.000000 1.000000 1.000000
-Ks 0.500000 0.500000 0.500000
-Ke 0.000000 0.000000 0.000000
-Ni 1.000000
-illum 2
-map_Kd /home/easter/Documents/Coding Projects/Haystack/Source/Maps/Tazmily/textures/generic_shadow.png
-map_d /home/easter/Documents/Coding Projects/Haystack/Source/Maps/Tazmily/textures/generic_shadow.png
