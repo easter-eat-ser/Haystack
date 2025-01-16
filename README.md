@@ -5,5 +5,7 @@ Haystack is an open-source recreation of Mother 3, which aims to combine Mother 
 This project is entirely open, because there's really no point to hiding progress behind fake walls.
 
 Tools:
-	- Blender 4.2 Stable LTS or earlier
-	- Godot v4.3 Stable
+	- Blender 4.2 Stable LTS or earlier (not a really big deal, as long as you keep compatiblity with 4.2)
+	- Godot v4.3 Stable (mobile graphics because the z-fighting on Compatibility is horrible)
+	
+we have a discord.... https://discord.gg/PC5xvQgyJh
